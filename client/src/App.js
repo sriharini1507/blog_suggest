@@ -18,7 +18,7 @@ function App() {
     setError("");
 
     try {
-      const response = await axios.post("http://localhost:5000/analyze", {
+      const response = await axios.post("http://127.0.0.1:5000/analyze", {
         url,
       });
 
@@ -28,6 +28,7 @@ function App() {
         setError("No blog ideas returned. Try another site.");
       }
     } catch (err) {
+      console.log("Error:", err);
       setError("Error contacting backend. Make sure Flask is running.");
     } finally {
       setLoading(false);
