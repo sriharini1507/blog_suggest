@@ -11,6 +11,7 @@ gunicorn
 filelock==3.18.0
 Flask==3.1.1
 flask-cors
+groq
 Flask-SQLAlchemy==3.1.1
 flatbuffers==25.2.10
 gast==0.6.0
