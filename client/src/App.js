@@ -18,8 +18,8 @@ function App() {
     setError("");
 
     try {
-      const response = await axios.post("http://127.0.0.1:5000/analyze", {
-        url,
+      const response = await axios.post("https://blog-suggestor.onrender.com/analyze", {
+  url,
       });
 
       if (response.data.blog_ideas) {
